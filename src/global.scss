@@ -1,0 +1,67 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+:root {
+  --ion-color-button: #F7C45F;
+  --ion-color-button-rgb: 247,196,95;
+  --ion-color-button-contrast: #000000;
+  --ion-color-button-contrast-rgb: 0,0,0;
+  --ion-color-button-shade: #d9ac54;
+  --ion-color-button-tint: #f8ca6f;
+
+  --ion-color-light: #FFEED6;
+  --ion-color-dark: #28364A;
+}
+
+.ion-color-button {
+  --ion-color-base: var(--ion-color-button);
+  --ion-color-base-rgb: var(--ion-color-button-rgb);
+  --ion-color-contrast: var(--ion-color-button-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-button-contrast-rgb);
+  --ion-color-shade: var(--ion-color-button-shade);
+  --ion-color-tint: var(--ion-color-button-tint);
+}
+
+
+
+.small-modal .modal-wrapper {
+	height: 80%;
+	top: 10%;
+	width: 60%;
+	left: 20%;
+	opacity: 0;
+	position: absolute;
+	display: block;  
+	border-radius: 8px;
+	background: transparent !important;
+}
+
+ion-backdrop
+{
+	background-color: rgba(0,0,0,0);
+}

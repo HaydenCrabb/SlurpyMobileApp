@@ -1,0 +1,7 @@
+{
+  "name": "Slurpy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

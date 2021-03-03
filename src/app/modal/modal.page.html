@@ -1,0 +1,20 @@
+<ion-content class="dropin">
+	<ion-grid style="height: 100%">
+		<ion-row>
+			<div class="points">
+				{{ theLastScore }}
+			</div>
+		</ion-row>
+	 	<ion-row class="ion-align-items-center ion-justify-content-center">
+	 		<div class="space">
+		    	<ion-button class="main-button" color="button" (click)="dismiss()">
+		    		<ion-icon name="refresh" slot="icon-only"></ion-icon>
+		    	</ion-button>
+	   		</div>
+	 	</ion-row>
+	 	<ion-row>
+	 		<p class="highscore">{{ highscore }}</p>
+	 	</ion-row>
+	</ion-grid>
+	
+</ion-content>

@@ -1,0 +1,10 @@
+<ion-content class="background1">
+	<div (pan)="swiped($event)" (tap)="handleTaps($event)"  class="playingField" id="playingField" [style.width]="playingWidth + 'px'" [style.height]="playingHeight + 'px'" [style.top]="playingFieldPosition.top + 'px'" [style.left]="playingFieldPosition.left + 'px'">
+		<div id="player" class="player" [style.top]="characterPosition.top + 'px'" [style.left]="characterPosition.left + 'px'"></div>
+		<div id="upgrade" class="upgrade" [style.top]="upgradePosition.top + 'px'" [style.left]="upgradePosition.left + 'px'"></div>
+		<div id="points" class="points" [style.top]="points.top + 'px'" [style.left]="points.left + 'px'" [style.width]="points.width + 'px'" [style.height]="points.height + 'px'"><div class="points-inner">{{ points.value }}</div></div>
+		<div class="enemy" *ngFor="let enemy of enemies" [style.top]="enemy.top + 'px'" [style.left]="enemy.left + 'px'"></div>
+		<div [ngClass]="{wall: true, one: wall.classes.one, two: wall.classes.two, three: wall.classes.three, four: wall.classes.four}" *ngFor="let wall of walls" [style.top]="wall.top + 'px'" [style.left]="wall.left + 'px'" [style.borderTopLeftRadius]="wall.borderRadius.borderTopLeftRadius + 'px'" [style.borderTopRightRadius]="wall.borderRadius.borderTopRightRadius + 'px'" [style.borderBottomLeftRadius]="wall.borderRadius.borderBottomLeftRadius + 'px'" [style.borderBottomRightRadius]="wall.borderRadius.borderBottomRightRadius + 'px'"></div>
+	</div>
+	<div class="cover" *ngFor="let cover of coveringWalls" [style.top]="cover.top + 'px'" [style.left]="cover.left + 'px'" [style.width]="cover.width + 'px'" [style.height]="cover.height + 'px'"></div>
+</ion-content>
